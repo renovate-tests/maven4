@@ -1,0 +1,138 @@
+{
+         "vulnerabilityAlerts": {"enabled": false},
+         "suppressNotifications": [
+           "prIgnoreNotification",
+           "prEditNotification",
+           "deprecationWarningIssues"
+         ],
+         "maven": {"enabled": true},
+         "npm": {
+           "prBodyDefinitions": {
+             "Change": "{{#if displayFrom}}`{{{displayFrom}}}` -> {{else}}{{#if currentValue}}`{{{currentValue}}}` -> {{/if}}{{/if}}{{#if displayTo}}`{{{displayTo}}}`{{else}}`{{{newValue}}}`{{/if}}"
+           }
+         },
+         "packageRules": [
+           {"packagePatterns": ["*"], "enabled": false},
+           {
+             "datasources": ["maven"],
+             "packageNames": ["org.apache.tomcat:tomcat-util"],
+             "matchCurrentVersion": "(,7.0.88)",
+             "allowedVersions": "7.0.88",
+             "vulnerabilityAlert": true,
+             "enabled": true,
+             "groupName": null,
+             "schedule": [],
+             "masterIssueApproval": false,
+             "labels": ["security fix"],
+             "prBodyNotes": [
+               "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2018-1336](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1336) | Fixes #61 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 4.3 | [CVE-2014-0099](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0099) | Fixes #60 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 4.3 | [CVE-2013-4590](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4590) | Fixes #26 |\n"
+             ]
+           },
+           {
+             "datasources": ["maven"],
+             "packageNames": ["com.google.guava:guava"],
+             "matchCurrentVersion": "(,24.1.1-android)",
+             "allowedVersions": "24.1.1-android",
+             "vulnerabilityAlert": true,
+             "enabled": true,
+             "groupName": null,
+             "schedule": [],
+             "masterIssueApproval": false,
+             "labels": ["security fix"],
+             "prBodyNotes": [
+               "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.9 | [CVE-2018-10237](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10237) | Fixes #59 |\n"
+             ]
+           },
+           {
+             "datasources": ["maven"],
+             "packageNames": ["org.springframework:spring-core"],
+             "matchCurrentVersion": "(,v4.3.15.RELEASE)",
+             "allowedVersions": "v4.3.15.RELEASE",
+             "vulnerabilityAlert": true,
+             "enabled": true,
+             "groupName": null,
+             "schedule": [],
+             "masterIssueApproval": false,
+             "labels": ["security fix"],
+             "prBodyNotes": [
+               "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2018-1272](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1272) | Fixes #58 |\n"
+             ]
+           },
+           {
+             "datasources": ["maven"],
+             "packageNames": ["org.apache.tomcat.embed:tomcat-embed-core"],
+             "matchCurrentVersion": "(,9.0.1)",
+             "allowedVersions": "9.0.1",
+             "vulnerabilityAlert": true,
+             "enabled": true,
+             "groupName": null,
+             "schedule": [],
+             "masterIssueApproval": false,
+             "labels": ["security fix"],
+             "prBodyNotes": [
+               "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2017-5647](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5647) | Fixes #56 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2016-3092](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3092) | Fixes #53 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 4.3 | [CVE-2015-5174](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5174) | Fixes #52 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2018-8014](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8014) | Fixes #48 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 8.1 | [CVE-2017-12617](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12617) | Fixes #42 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 6.3 | [CVE-2016-0763](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0763) | Fixes #35 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.9 | [CVE-2016-0762](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0762) | Fixes #34 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 8.8 | [CVE-2016-0714](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0714) | Fixes #33 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 4.3 | [CVE-2016-0706](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0706) | Fixes #32 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 8.1 | [CVE-2015-5346](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5346) | Fixes #30 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.3 | [CVE-2015-5345](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5345) | Fixes #29 |\n"
+             ]
+           },
+           {
+             "datasources": ["maven"],
+             "packageNames": ["com.fasterxml.jackson.core:jackson-core"],
+             "matchCurrentVersion": "(,2.8.6)",
+             "allowedVersions": "2.8.6",
+             "vulnerabilityAlert": true,
+             "enabled": true,
+             "groupName": null,
+             "schedule": [],
+             "masterIssueApproval": false,
+             "labels": ["security fix"],
+             "prBodyNotes": [
+               "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.5 | [WS-2018-0125](https://github.com/FasterXML/jackson-core/issues/315) | Fixes #51 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.5 | [WS-2018-0124](https://issues.jboss.org/browse/JBEAP-6316) | Fixes #50 |\n"
+             ]
+           },
+           {
+             "datasources": ["maven"],
+             "packageNames": ["org.apache.tomcat:tomcat-catalina"],
+             "matchCurrentVersion": "(,9.0.18)",
+             "allowedVersions": "9.0.18",
+             "vulnerabilityAlert": true,
+             "enabled": true,
+             "groupName": null,
+             "schedule": [],
+             "masterIssueApproval": false,
+             "labels": ["security fix"],
+             "prBodyNotes": [
+               "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 8.1 | [CVE-2019-0232](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0232) | Fixes #49 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2018-8014](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8014) | Fixes #48 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 6.5 | [CVE-2018-1305](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1305) | Fixes #47 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.9 | [CVE-2018-1304](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1304) | Fixes #46 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 8.1 | [CVE-2017-12617](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12617) | Fixes #42 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2016-6796](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6796) | Fixes #38 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 6.3 | [CVE-2016-0763](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0763) | Fixes #35 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.9 | [CVE-2016-0762](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0762) | Fixes #34 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 8.8 | [CVE-2016-0714](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0714) | Fixes #33 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 4.3 | [CVE-2016-0706](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0706) | Fixes #32 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 8.8 | [CVE-2015-5351](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5351) | Fixes #31 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 8.1 | [CVE-2015-5346](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5346) | Fixes #30 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.3 | [CVE-2015-5345](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5345) | Fixes #29 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 4.3 | [CVE-2014-0119](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0119) | Fixes #28 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 4.3 | [CVE-2014-0096](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0096) | Fixes #27 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 4.3 | [CVE-2013-4590](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4590) | Fixes #26 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 4.3 | [CVE-2012-4529](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4529) | Fixes #25 |\n"
+             ]
+           },
+           {
+             "datasources": ["maven"],
+             "packageNames": ["org.springframework:spring-web"],
+             "matchCurrentVersion": "(,5.0.7)",
+             "allowedVersions": "5.0.7",
+             "vulnerabilityAlert": true,
+             "enabled": true,
+             "groupName": null,
+             "schedule": [],
+             "masterIssueApproval": false,
+             "labels": ["security fix"],
+             "prBodyNotes": [
+               "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2018-15756](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15756) | Fixes #24 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.9 | [CVE-2018-11040](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11040) | Fixes #23 |\n"
+             ]
+           },
+           {
+             "datasources": ["maven"],
+             "packageNames": ["com.fasterxml.jackson.core:jackson-databind"],
+             "matchCurrentVersion": "(,2.10.0.pr1)",
+             "allowedVersions": "2.10.0.pr1",
+             "vulnerabilityAlert": true,
+             "enabled": true,
+             "groupName": null,
+             "schedule": [],
+             "masterIssueApproval": false,
+             "labels": ["security fix"],
+             "prBodyNotes": [
+               "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.0 | [CVE-2019-16942](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16942) | Fixes #21 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2019-16335](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16335) | Fixes #20 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2019-14540](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14540) | Fixes #19 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2019-14439](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14439) | Fixes #18 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2019-14379](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14379) | Fixes #17 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.9 | [CVE-2019-12814](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12814) | Fixes #16 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.9 | [CVE-2019-12384](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12384) | Fixes #15 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2019-12086](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12086) | Fixes #14 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2018-7489](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7489) | Fixes #13 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 8.1 | [CVE-2018-5968](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5968) | Fixes #12 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2018-19362](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19362) | Fixes #11 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2018-19361](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19361) | Fixes #10 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2018-19360](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19360) | Fixes #9 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 10.0 | [CVE-2018-14721](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14721) | Fixes #8 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2018-14718](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14718) | Fixes #7 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2018-12023](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12023) | Fixes #6 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2018-12022](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12022) | Fixes #5 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2018-11307](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11307) | Fixes #4 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2017-7525](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7525) | Fixes #3 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 9.8 | [CVE-2017-15095](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15095) | Fixes #1 |\n"
+             ]
+           }
+         ],
+         "enabledManagers": ["", "maven"]
+       }
