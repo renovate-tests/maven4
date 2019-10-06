@@ -124,7 +124,7 @@
              "datasources": ["maven"],
              "packageNames": ["com.fasterxml.jackson.core:jackson-databind"],
              "matchCurrentVersion": "(,2.10.0.pr1)",
-             "allowedVersions": "[2.10.0.pr1,)",
+             "allowedVersions": "2.10.0.pr1",
              
              "enabled": true,
              "groupName": null,
