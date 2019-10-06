@@ -6,6 +6,7 @@
            "deprecationWarningIssues"
          ],
          "ignoreUnstable": false,
+         "vulnerabilityAlert": true,
          "maven": {"enabled": true},
          "npm": {
            "prBodyDefinitions": {
