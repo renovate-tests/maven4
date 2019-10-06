@@ -19,7 +19,7 @@
              "datasources": ["maven"],
              "packageNames": ["org.apache.tomcat:tomcat-util"],
              "matchCurrentVersion": "(,7.0.88)",
-             "allowedVersions": "[7.0.88,)",
+             "allowedVersions": "7.0.88",
              
              "enabled": true,
              "groupName": null,
@@ -34,7 +34,7 @@
              "datasources": ["maven"],
              "packageNames": ["com.google.guava:guava"],
              "matchCurrentVersion": "(,24.1.1-android)",
-             "allowedVersions": "[24.1.1-android,)",
+             "allowedVersions": "24.1.1-android",
              
              "enabled": true,
              "groupName": null,
@@ -49,7 +49,7 @@
              "datasources": ["maven"],
              "packageNames": ["org.springframework:spring-core"],
              "matchCurrentVersion": "(,v4.3.15.RELEASE)",
-             "allowedVersions": "[v4.3.15.RELEASE,)",
+             "allowedVersions": "v4.3.15.RELEASE",
              
              "enabled": true,
              "groupName": null,
@@ -64,7 +64,7 @@
              "datasources": ["maven"],
              "packageNames": ["org.apache.tomcat.embed:tomcat-embed-core"],
              "matchCurrentVersion": "(,9.0.1)",
-             "allowedVersions": "[9.0.1,)",
+             "allowedVersions": "9.0.1",
              
              "enabled": true,
              "groupName": null,
@@ -94,7 +94,7 @@
              "datasources": ["maven"],
              "packageNames": ["org.apache.tomcat:tomcat-catalina"],
              "matchCurrentVersion": "(,9.0.18)",
-             "allowedVersions": "[9.0.18,)",
+             "allowedVersions": "9.0.18",
              
              "enabled": true,
              "groupName": null,
@@ -109,7 +109,7 @@
              "datasources": ["maven"],
              "packageNames": ["org.springframework:spring-web"],
              "matchCurrentVersion": "(,5.0.7)",
-             "allowedVersions": "[5.0.7,)",
+             "allowedVersions": "5.0.7",
              
              "enabled": true,
              "groupName": null,
